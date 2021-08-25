@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOME */
+
+.banner{
+    position:relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5rem;
+    color: red;
+    text-shadow: 0 0 5px black,
+    0 0 10px black, 
+    0 0 20px black, 
+    0 0 30px black, 
+    0 0 40px black, 
+    0 0 55px black, 
+    0 0 70px black;
+}
+
+.banner .content p{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,  
+    0 0 20px red, 
+    0 0 30px red, 
+    0 0 40px red, 
+    0 0 55px red, 
+    0 0 70px red;
+}
+
+.btn{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: red;
+    background: black;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px;
+}
+
+.btn:hover{
+    letter-spacing: 5px;
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 10px 10px;
+}
+
+/* NAVBAR */
+
+.nav-list{
+    background-image: linear-gradient(black,red);
+    margin: 0;
+    padding: 1rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    list-style: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-shadow: 0 0 5px red,
+    0 0 10px red, 
+    0 0 20px red, 
+    0 0 30px red, 
+    0 0 40px red, 
+    0 0 55px red, 
+    0 0 70px red;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover{
+    color: red;
+    text-shadow: 0 0 5px black,
+    0 0 10px black, 
+    0 0 20px black, 
+    0 0 30px black, 
+    0 0 40px black, 
+    0 0 55px black, 
+    0 0 70px black;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+    text-shadow: 0 0 5px red,
+    0 0 10px red, 
+    0 0 20px red, 
+    0 0 30px red, 
+    0 0 40px red, 
+    0 0 55px red, 
+    0 0 70px red;
+    font-size: 2rem;
+}
+
+input[type=search]{
+    border: 3px solid red;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: red;
+    letter-spacing: 2px;
+}
+
+input[type=search]:hover{
+    box-shadow: 0 0 10px 5px red;
+}
+
+/* GAMES */
+
+.games{
+    background: black;
+}
+
+.games-container{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+}
+
+.game{
+    border: 3px solid red;
+    margin: 2rem;
+    width: auto;
+    height: 420px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px red;
+}
+
+.game:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+
+.game img{
+    height:auto;
+    width: 100%;
+   
+} 
+
+.game p{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    color: red;
+}
+
+.game:hover p{
+    color: black;
+}
+
+.link{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    border: 2px solid red;
+    padding: 0.5rem;
+    position: relative;
+    text-decoration: none;
+    left: 5rem;
+    color: red;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px red;
+}
+
+.game:hover .link{
+    border-color: black ;
+    color: black;
+    box-shadow: 0 0 10px 5px black;
+}
+
+/* CONATACT */
+
+.contact{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-box{
+    border: 5px solid red;
+    color: red;
+    height: auto    ;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-box img{
+    height: 400px;
+    width:100%;
+}
+
+.name{
+    margin-top: 2rem;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.work{
+    margin: top 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+}
+
+.social{
+    margin: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.fa-instagram{
+    font-size: 50px;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width:400px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-item{
+        padding: .5rem;
+        align-self: center;
+    }
+    .banner{
+        top: 250px;
+    }
+    .banner .content h2{
+        font-size: 3rem;
+    }
+    .banner .content p{
+        font-size: 1.5rem;
+    }
+    .games{
+        position: relative;
+        top: 200px;
+    }
+    .game{
+        width: 250px;
+        height: auto;
+    }
+    .link{
+        display: inline-block;
+        margin: auto;
+        margin:0 auto 1rem auto ;
+    }
+    
+}
